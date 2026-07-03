@@ -574,3 +574,14 @@ PRODUCT_PACKAGES += \
     vendor_lib64_libneuron_runtime_so \
     vendor_lib64_libnir_neon_driver_so \
     vendor_lib64_libpq_prot_so
+
+PRODUCT_PACKAGES += \
+    libcodec2_hidl@1.0-v31 \
+    libcodec2_hidl@1.1-v31 \
+    libcodec2_hidl@1.2-v31 \
+    libcodec2_hidl_plugin-v31 \
+    libcodec2_soft_common-v31 \
+    libcodec2_vndk-v31 \
+    libsfplugin_ccodec_utils-v31 \
+    libstagefright_bufferqueue_helper-v33 \
+    manifest_media_c2_V1_2_default.xml
