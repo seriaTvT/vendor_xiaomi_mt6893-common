@@ -3877,6 +3877,7 @@ cc_prebuilt_library_shared {
                 "proprietary/vendor/lib64/hw/vendor.mediatek.hardware.pq@2.13-impl.so",
             ],
             shared_libs: [
+                "libtinyxml2-v34",
                 "libhidlbase",
                 "libhidltransport",
                 "libhwbinder",
@@ -3885,7 +3886,6 @@ cc_prebuilt_library_shared {
                 "libcutils",
                 "libpq_prot",
                 "libhidlmemory",
-                "libtinyxml2",
                 "vendor.mediatek.hardware.pq@2.0",
                 "vendor.mediatek.hardware.pq@2.1",
                 "vendor.mediatek.hardware.pq@2.2",
@@ -9373,6 +9373,7 @@ cc_prebuilt_binary {
                 "proprietary/vendor/bin/hw/mtkfusionrild",
             ],
             shared_libs: [
+                "libutils-v32",
                 "libmtkrillog",
                 "libmtkproperty",
                 "libmtkcutils",
@@ -10619,3 +10620,4 @@ prebuilt_etc_xml {
     sub_dir: "vintf/manifest",
     soc_specific: true,
 }
+
