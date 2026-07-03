@@ -128,7 +128,6 @@ PRODUCT_COPY_FILES += \
     vendor/xiaomi/mt6893-common/proprietary/vendor/etc/gnss/carrier/agps_profiles_conf2_carrier_Test_SIM1.xml:$(TARGET_COPY_OUT_VENDOR)/etc/gnss/carrier/agps_profiles_conf2_carrier_Test_SIM1.xml \
     vendor/xiaomi/mt6893-common/proprietary/vendor/etc/gnss/carrier/agps_profiles_conf2_carrier_Test_SIM2.xml:$(TARGET_COPY_OUT_VENDOR)/etc/gnss/carrier/agps_profiles_conf2_carrier_Test_SIM2.xml \
     vendor/xiaomi/mt6893-common/proprietary/vendor/etc/gnss/carrier/agps_profiles_conf2_carrier_Verizon_Wireless.xml:$(TARGET_COPY_OUT_VENDOR)/etc/gnss/carrier/agps_profiles_conf2_carrier_Verizon_Wireless.xml \
-    vendor/xiaomi/mt6893-common/proprietary/vendor/etc/init/android.hardware.bluetooth@1.1-service-mediatek.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/android.hardware.bluetooth@1.1-service-mediatek.rc \
     vendor/xiaomi/mt6893-common/proprietary/vendor/etc/init/android.hardware.drm@1.4-service.widevine.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/android.hardware.drm@1.4-service.widevine.rc \
     vendor/xiaomi/mt6893-common/proprietary/vendor/etc/init/android.hardware.gnss-service.mediatek.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/android.hardware.gnss-service.mediatek.rc \
     vendor/xiaomi/mt6893-common/proprietary/vendor/etc/init/android.hardware.graphics.allocator@4.0-service-mediatek.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/android.hardware.graphics.allocator@4.0-service-mediatek.rc \
@@ -255,7 +254,6 @@ PRODUCT_PACKAGES += \
     libmtkrillog \
     libnvram \
     libnvram_sec \
-    libpowerhalwrap_vendor \
     libstagefright_soft_ac4dec \
     libstagefright_soft_ddpdec \
     libstagefrightdolby \
@@ -281,7 +279,6 @@ PRODUCT_PACKAGES += \
     audio.r_submix.mt6893 \
     sound_trigger.primary.default \
     libAVCSecureVencCA \
-    libHEVCdec_sa.ca7.android \
     libMtkSpeechEnh \
     lib_iir \
     lib_speech_enh \
@@ -300,11 +297,6 @@ PRODUCT_PACKAGES += \
     libbessound_hd_mtk_vendor \
     libblisrc32_vendor \
     libcvsd_mtk \
-    libh264dec_customize \
-    libh264dec_sa.ca7 \
-    libh264enc_sa.ca7 \
-    libhevce_sb.ca7.android \
-    libmp4enc_sa.ca7 \
     libmsbc_mtk \
     libmtklimiter_vendor \
     libmtkshifter_vendor \
@@ -321,9 +313,6 @@ PRODUCT_PACKAGES += \
     libvow_ap_test_ha \
     libvow_ap_test_hh \
     libvow_ap_test_nn \
-    libvp8dec_sa.ca7 \
-    libvp8enc_sa.ca7 \
-    libvp9dec_sa.ca7 \
     libvpud_vcodec \
     vendor.mediatek.hardware.audio@7.1 \
     APUWareApusysServer \
@@ -336,7 +325,6 @@ PRODUCT_PACKAGES += \
     libMEOW_qt \
     libMEOW_trace \
     libGLES_mali \
-    android.hardware.bluetooth@1.1-impl-mediatek \
     android.hardware.gnss-impl-mediatek \
     android.hardware.gnss@2.1-impl-mediatek \
     consumerir.common \
@@ -352,7 +340,6 @@ PRODUCT_PACKAGES += \
     vulkan.mali \
     sensors.mt6893 \
     vendor.mediatek.hardware.mms@1.6-impl \
-    vendor.mediatek.hardware.mtkpower@1.2-impl \
     vendor.mediatek.hardware.nvram@1.1-impl \
     vendor.mediatek.hardware.pq@2.13-impl \
     vendor.mediatek.hardware.videotelephony@1.0-impl \
@@ -365,7 +352,6 @@ PRODUCT_PACKAGES += \
     libaal_key \
     libaal_mtk \
     libaalservice \
-    libadpcmdec_mtk \
     libaiselector_cust \
     libaispq \
     libappgamepq \
@@ -374,7 +360,6 @@ PRODUCT_PACKAGES += \
     libapusys_edma \
     libarmnn \
     libarmnn_ndk.mtk.vndk \
-    libbluetooth_audio_session_mediatek \
     libbluetooth_mtk \
     libbluetooth_mtk_pure \
     libbt-vendor \
@@ -386,11 +371,6 @@ PRODUCT_PACKAGES += \
     libcodec2_mtk_c2store \
     libcodec2_mtk_vdec \
     libcodec2_mtk_venc \
-    libcodec2_soft_mtk_alacdec \
-    libcodec2_soft_mtk_apedec \
-    libcodec2_soft_mtk_imaadpcmdec \
-    libcodec2_soft_mtk_mp3dec \
-    libcodec2_soft_mtk_msadpcmdec \
     libcodec2_vpp_qt_plugin \
     libcodec2_vpp_rs_plugin \
     libcomposer_ext \
@@ -426,7 +406,6 @@ PRODUCT_PACKAGES += \
     libmmagent \
     libmml \
     libmnetlink_v104 \
-    libmp3dec_mtk \
     libmt_isee \
     libmt_isee@1.2 \
     libmt_mitee \
@@ -451,9 +430,6 @@ PRODUCT_PACKAGES += \
     libneuropilot_hal_utils \
     libnir_neon_driver_ndk.mtk.vndk \
     liboemcrypto \
-    libperfctl_vendor \
-    libpower_timer \
-    libpowerhal \
     libpq_cust_base \
     libpqframework \
     libpqparamparser \
@@ -536,7 +512,6 @@ PRODUCT_PACKAGES += \
     gnss-mtk.xml \
     gnss@2.1-service.xml \
     manifest_android.hardware.drm@1.4-service.widevine.xml \
-    manifest_media_c2_V1_1_default.xml \
     manifest_vendor.dolby.hardware.dms.xml \
     bp_kmsetkey_ca \
     ccci_mdinit \
@@ -545,7 +520,6 @@ PRODUCT_PACKAGES += \
     fidoca_isee \
     fidoca_mitee \
     gsm0710muxd \
-    android.hardware.bluetooth@1.1-service-mediatek \
     android.hardware.drm@1.4-service.widevine \
     android.hardware.gnss-service.mediatek \
     android.hardware.graphics.allocator@4.0-service-mediatek \
