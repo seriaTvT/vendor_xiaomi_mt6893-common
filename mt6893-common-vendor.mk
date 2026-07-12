@@ -159,12 +159,6 @@ PRODUCT_COPY_FILES += \
     vendor/xiaomi/mt6893-common/proprietary/vendor/etc/init/vendor.mediatek.hardware.pq@2.2-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.mediatek.hardware.pq@2.2-service.rc \
     vendor/xiaomi/mt6893-common/proprietary/vendor/etc/init/vendor.microtrust.hardware.soter@1.0-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.microtrust.hardware.soter@1.0-service.rc \
     vendor/xiaomi/mt6893-common/proprietary/vendor/etc/init/vendor.microtrust.hardware.thh@2.0-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.microtrust.hardware.thh@2.0-service.rc \
-    vendor/xiaomi/mt6893-common/proprietary/vendor/etc/init/vendor.xiaomi.hardware.mfidoca@1.0-iseeservice.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.xiaomi.hardware.mfidoca@1.0-iseeservice.rc \
-    vendor/xiaomi/mt6893-common/proprietary/vendor/etc/init/vendor.xiaomi.hardware.mfidoca@1.0-miteeservice.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.xiaomi.hardware.mfidoca@1.0-miteeservice.rc \
-    vendor/xiaomi/mt6893-common/proprietary/vendor/etc/init/vendor.xiaomi.hardware.mlipay@1.1-iseeservice.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.xiaomi.hardware.mlipay@1.1-iseeservice.rc \
-    vendor/xiaomi/mt6893-common/proprietary/vendor/etc/init/vendor.xiaomi.hardware.mlipay@1.1-miteeservice.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.xiaomi.hardware.mlipay@1.1-miteeservice.rc \
-    vendor/xiaomi/mt6893-common/proprietary/vendor/etc/init/vendor.xiaomi.hardware.mtdservice@1.2-iseeservice.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.xiaomi.hardware.mtdservice@1.2-iseeservice.rc \
-    vendor/xiaomi/mt6893-common/proprietary/vendor/etc/init/vendor.xiaomi.hardware.mtdservice@1.2-miteeservice.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.xiaomi.hardware.mtdservice@1.2-miteeservice.rc \
     vendor/xiaomi/mt6893-common/proprietary/vendor/etc/init/vpud.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vpud.rc \
     vendor/xiaomi/mt6893-common/proprietary/vendor/etc/init/wlan_assistant.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/wlan_assistant.rc \
     vendor/xiaomi/mt6893-common/proprietary/vendor/etc/libnfc-hal-st.conf:$(TARGET_COPY_OUT_VENDOR)/etc/libnfc-hal-st.conf \
@@ -396,20 +390,10 @@ PRODUCT_PACKAGES += \
     libjpeg-alpha-oal_vendor \
     libjpeg-alpha_vendor \
     libksensor \
-    libmfido_isee \
-    libmfido_mitee \
     libmipc \
-    libmlipay_isee \
-    libmlipay_isee@1.1 \
-    libmlipay_mitee \
-    libmlipay_mitee@1.1 \
     libmmagent \
     libmml \
     libmnetlink_v104 \
-    libmt_isee \
-    libmt_isee@1.2 \
-    libmt_mitee \
-    libmt_mitee@1.2 \
     libmtk-fusion-ril-prop-vsim \
     libmtk-ril \
     libmtkares \
@@ -517,8 +501,6 @@ PRODUCT_PACKAGES += \
     ccci_mdinit \
     ccci_rpcd \
     conninfra_loader \
-    fidoca_isee \
-    fidoca_mitee \
     gsm0710muxd \
     android.hardware.drm@1.4-service.widevine \
     android.hardware.gnss-service.mediatek \
@@ -539,11 +521,7 @@ PRODUCT_PACKAGES += \
     vendor.microtrust.hardware.thh@2.0-service \
     vtservice_hidl \
     miteelog \
-    mlipayd_isee@1.1 \
-    mlipayd_mitee@1.1 \
     mnld \
-    mtd_isee@1.2 \
-    mtd_mitee@1.2 \
     mtk_agpsd \
     netdagent \
     nvram_daemon \
