@@ -89,3 +89,21 @@ geteuid32: 1
 getgid32: 1
 getegid32: 1
 getgroups32: 1
+
+# arm64 additions (LOS port): this HAL ships as the -64b binary, but the
+# policy above was authored with 32-bit ARM syscall names. minijail's
+# compiler silently drops any name it can't resolve against the arm64
+# syscall table ("nonexistent syscall" warning at HAL start, visible via
+# logcat), so every *64/*32/_llseek-style legacy name here left its arm64
+# equivalent unlisted. Names already covered natively above (ftruncate,
+# openat, readlinkat, lseek) are not repeated. See PORT-LOG.md 2026-07-13
+# for the SIGSYS crash-loop this caused and how it was found.
+getuid: 1
+fstat: 1
+fstatfs: 1
+newfstatat: 1
+getrlimit: 1
+geteuid: 1
+getgid: 1
+getegid: 1
+getgroups: 1
